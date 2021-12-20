@@ -1,0 +1,60 @@
+.header-wrapper {
+  display: flex;
+
+  align-items: center;
+  background-color: rgb(59, 175, 218);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-text {
+  font-size: 30px;
+  color: white;
+  flex: 1;
+  text-align: center;
+  padding-left: 5%;
+}
+.header-icon {
+  transform: scale(1.7);
+  color: white;
+}
+.header-wrapper button {
+  margin-right: 2%;
+}
+::ng-deep
+  .mat-checkbox-checked.mat-accent
+  .mat-checkbox-ripple
+  .mat-ripple-element {
+  background-color: rgb(59, 175, 218) !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent.mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: rgb(59, 175, 218);
+}
+
+::ng-deep .mat-checkbox.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+  background-color: rgb(59, 175, 218) !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: rgb(59, 175, 218);
+}
+.card_checkbox {
+  font-size: 16px;
+  padding-top: 20px;
+}
+.card_checkbox_completed {
+  text-decoration: line-through;
+}
+.project-card {
+  min-width: 300px;
+  max-width: 500px;
+}
+::ng-deep .mat-grid-tile-content {
+  align-items: flex-start !important;
+}
+.grid-tile {
+  margin-top: 20px;
+}

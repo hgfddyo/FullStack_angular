@@ -1,0 +1,25 @@
+h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+}
+.dialog-content-wrapper {
+  margin-top: 20px;
+}
+.dialog-controls {
+  width: 100%;
+  font-size: 16px;
+}
+.dialog-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.dialog-actions button {
+  width: 150px;
+  background-color: #a0a0a0;
+  color: white;
+}
+.dialog-actions button:last-child {
+  width: 150px;
+  background-color: rgb(58, 175, 218);
+}

@@ -1,0 +1,31 @@
+<h2 mat-dialog-title>Новая задача</h2>
+<mat-divider></mat-divider>
+<div mat-dialog-content class="dialog-content-wrapper">
+  <form [formGroup]="projectForm">
+    <mat-form-field class="dialog-controls" appearance="fill">
+      <mat-label>Новая Задача</mat-label>
+      <input matInput formControlName="text" />
+    </mat-form-field>
+    <mat-form-field class="dialog-controls" appearance="fill">
+      <mat-label>Категория</mat-label>
+      <mat-select formControlName="project">
+        <mat-option *ngFor="let project of projects" [value]="project.id">
+          {{project.title}}
+        </mat-option>
+        <mat-option value="new">Новая категория</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field
+      *ngIf="projectForm.value.project === 'new'"
+      class="dialog-controls"
+      appearance="fill"
+    >
+      <mat-label>Новая категория</mat-label>
+      <input matInput formControlName="projectTitle" />
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions class="dialog-actions">
+  <button mat-raised-button mat-dialog-close>Отмена</button>
+  <button mat-raised-button (click)="onCreateClick()">Создать</button>
+</div>
